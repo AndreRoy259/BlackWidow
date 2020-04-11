@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Black Widow</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="./img/logo.png" alt="" /></a>
+      <div class="toggle"><img src="./img/arrow.png" alt="" /></div>
+    </header>
+    <div class="banner">
+      <div class="content">
+        <h2>Let me put <span>You</span> on hold</h2>
+        <p>
+          In Marvel Studios’ action-packed spy thriller Black Widow, Natasha
+          Romanoff aka Black Widow confronts the darker parts of her ledger when
+          a dangerous conspiracy with ties to her past arises. Pursued by a
+          force that will stop at nothing to bring her down, Natasha must deal
+          with her history as a spy and the broken relationships left in her
+          wake long before she became an Avenger.
+        </p>
+        <a href="#" class="play" onclick="toggle()"
+          ><img src="./img/play.png" alt="" />Watch Trailer</a
+        >
+        <div class="slide"></div>
+        <ul class="sci">
+          <li>
+            <a href="https://www.facebook.com/blackwidow/"><img src="./img/facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/theblackwidow"><img src="./img/twitter.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/black.widow/"><img src="./img/instagram.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="trailer">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ybji16u608U"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <!-- <video
+        src="./img/black-widow-trailer-3_h1080p.mov"
+        controls="true"
+      ></video> -->
+      <img src="./img/close.png" class="close" onclick="toggle()" alt="" />
+    </div>
+    <script type="text/javascript">
+      function toggle() {
+        var trailer = document.querySelector(".trailer");
+        // var video = document.querySelector(".video");
+        trailer.classList.toggle("active");
+        // video.currentTime = 0;
+        // video.pause();
+      }
+    </script>
+  </body>
+</html>
